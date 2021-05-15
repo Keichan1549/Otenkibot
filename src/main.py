@@ -9,7 +9,7 @@ def weather_get(place):
   url = "http://api.openweathermap.org/data/2.5/weather?q={}&appid={}&lang=ja".format(place,os.environ["WEATHER_APP_ID"])
 
   res = requests.get(url)
-  if res.request.status_code == requests.codes.ok:
+  if res.status_code == requests.codes.ok:
 
     res_json = res.json()
     data = json.loads(json.dumps(res_json, indent=2))
