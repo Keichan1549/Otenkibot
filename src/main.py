@@ -19,7 +19,7 @@ def weather_get(place):
 
     if data["weather"][0]["main"] == "Rain":
       msg = "傘がいるよ！"
-    elif data["weather"][0]["main"] != "rain":
+    elif data["weather"][0]["main"] != "Rain":
       msg = "傘はいらないよ！"
 
     out_msg = "天気:{}\n{}\n{}".format(weather,msg,data["weather"][0]["main"])
