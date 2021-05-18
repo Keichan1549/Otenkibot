@@ -5,7 +5,7 @@
 OpenWeatherのAPIを使用し、都市名で天気情報を取得し返してくれる。
 
 ・動作環境：AWS(Lambda+APIGateway)  
-・使用言語：Python  
+・使用言語：Python 3.8.5  
 ・FW：なし  
 
 追加予定機能  
